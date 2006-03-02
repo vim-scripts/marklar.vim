@@ -1,0 +1,59 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1483
+
+marklar.vim is designed for gvim. It is used daily on both gvim and an 8 color
+xterm terminal (Terminal.app on os x).  The colors are designed to take full
+advantage of gvim while still being recognizable (and useful) in the limited
+color environment.
+
+The colors are chosen with regard to contrast, semantics and use. 
+
+For general reading, a medium contrast colors that minimize eye strain.
+
+In situations where immediate attention to change is appropriate, strong stark
+contrast. Errors, warnings, mode labels, for example.
+
+Elements of the interface (or bits that vim wants to hide, like IGNORE), low
+contrast.
+
+For example, in diff mode, a blue-tinted background indicates added text, a
+red-tinted background indicates deleted text. For incsearch, a yellow-tint
+shows the match in progress. 
+
+Green is the reference color, two specific shades, in rgb: text=#71C293
+background=#06544a.
+
+If the background and foreground color of your terminal can be set to these
+colors, this colorscheme will work, even for terminals that only have 8 color
+support. Terminal.app on os x is an example.  I am sure there are others.
+
+Green is the easiest color for human eyes to see. By easiest, I mean that there
+are far more green frequency color receptors in the retina than the blue or red
+ones. Early monotone computer monitors chose green phosphors for this reason. I
+started this scheme based on a memory of an old hp monitor, but I ended up with
+a color that reminds me of a green chalkboard.
+
+I use vim and its syntax highlighting to catch mistakes and recognize patterns
+in code. As I expand my use of vim as a tool, I make adjustments to contrasts.
+Colors are completely a matter of taste, but this colorscheme has been designed
+incrementally from constant use. I hope you will try it.
+
+-- new -- 
+
+Optional Settings.  (requires vim7) 
+
+Works much like options in vim, except using :Marklar in place of :set. A few
+examples should make it clear.
+
+    :Marklar        <- displays a list of available options
+    :Marklar bold!  <- toggles the setting of the bold option
+    :Marklar bold?  <- queries the value of the bold option
+    :Marklar bold 1 <- sets the bold option to 1 (on).
+
+The options:
+
+    bold   <- activates bold for a group of commonly used highlight regions.
+    ignore <- toggles Ignore region between nearly and completely invisible.
+
+The default settings are : bold 0, ignore 1. If you prefer different defaults
+use the :Marklar command in your .vimrc file, to set your preferences.
+
