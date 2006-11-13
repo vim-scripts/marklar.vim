@@ -1,6 +1,7 @@
 " ------------------------------------------------------------------
 " Filename:	 marklar.vim
-" Last Modified: Nov, 01 2006 (19:34)
+" Last Modified: Nov, 10 2006 (19:34)
+" Version:       0.4
 " Maintainer:	 SM Smithfield (m_smithfield AT yahoo DOT com)
 " Copyright:	 2006 SM Smithfield
 "                This script is free software; you can redistribute it and/or 
@@ -22,8 +23,8 @@ if version >= 700
     hi SpellCap               guisp=#0000FF
     hi SpellRare              guisp=#ff4046
     hi SpellLocal	      guisp=#000000 ctermbg=0
-    hi Pmenu                  guibg=#266955 ctermbg=0 ctermfg=6
-    hi PmenuSel               guibg=#0B7260 cterm=bold ctermfg=3
+    hi Pmenu                  guifg=#00ffff guibg=#000000 ctermbg=0 ctermfg=6
+    hi PmenuSel               guifg=#ffff00 guibg=#000000 gui=bold cterm=bold ctermfg=3
     hi PmenuSbar              guibg=#204d40 ctermbg=6
     hi PmenuThumb             guifg=#38ff56 ctermfg=3
     hi CursorColumn           guibg=#096354
@@ -37,10 +38,10 @@ endif
 hi Comment guifg=#00BBBB guibg=NONE ctermfg=6 cterm=none
 hi Constant guifg=#FFFFFF guibg=NONE ctermfg=7 cterm=none
 hi Cursor guifg=NONE guibg=#FF0000
-hi DiffAdd guifg=fg guibg=#136769 ctermfg=4 ctermbg=7 cterm=none
-hi DiffChange guifg=fg guibg=#096354 ctermfg=4 ctermbg=2 cterm=none
-hi DiffDelete guifg=fg guibg=#50694A ctermfg=1 ctermbg=7 cterm=none
-hi DiffText guifg=#7CFC94 guibg=#096354 ctermfg=4 ctermbg=3 cterm=none
+hi DiffAdd guifg=NONE guibg=#136769 ctermfg=4 ctermbg=7 cterm=none
+hi DiffDelete guifg=NONE guibg=#50694A ctermfg=1 ctermbg=7 cterm=none
+hi DiffChange guifg=fg guibg=#00463c gui=None ctermfg=4 ctermbg=2 cterm=none
+hi DiffText guifg=#7CFC94 guibg=#00463c gui=bold ctermfg=4 ctermbg=3 cterm=none
 hi Directory guifg=#25B9F8 guibg=NONE ctermfg=2
 hi Error guifg=#FFFFFF guibg=#000000 ctermfg=7 ctermbg=0 cterm=bold
 hi ErrorMsg guifg=#8eff2e guibg=#204d40
@@ -59,7 +60,7 @@ hi NonText guifg=#00bbbb guibg=#204d40
 hi Normal guifg=#71C293 guibg=#06544a
 hi PreProc guifg=#25B9F8 guibg=bg gui=underline ctermfg=2 cterm=underline
 hi Question guifg=#FFFFFF guibg=#00A261
-hi Search guifg=NONE guibg=#0f7e7b ctermfg=3 ctermbg=0 cterm=bold
+hi Search guifg=NONE guibg=#0B7260 ctermfg=3 ctermbg=0 cterm=bold
 hi SignColumn guifg=#00BBBB guibg=#204d40
 hi Special guifg=#00FFFF guibg=NONE gui=bold ctermfg=6 cterm=bold
 hi SpecialKey guifg=#00FFFF guibg=#266955
@@ -76,3 +77,4 @@ hi WildMenu guifg=#20012e guibg=#00a675 gui=bold ctermfg=none ctermbg=none cterm
 "
 hi pythonPreCondit ctermfg=2 cterm=none
 hi tkWidget guifg=#D5B11C guibg=bg gui=bold ctermfg=7 cterm=bold
+hi tclBookends guifg=#7CFC94 guibg=NONE gui=bold ctermfg=2 cterm=bold
